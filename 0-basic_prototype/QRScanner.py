@@ -3,7 +3,7 @@ from PIL import Image
 import cv2
 import pyttsx3
 import datetime
-
+import playsound
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')       #getting details of current voice
@@ -43,6 +43,8 @@ while True:
 
 	try:
 		if d[0][0].decode('utf-8') == "guna123":
+
+			playsound.playsound("QRSound.mp3")
 			
 			greeting = greeting_function()
 			talk_function(f"{greeting}, Gunarakulan, you are warmly welcome")
