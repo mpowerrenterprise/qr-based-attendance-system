@@ -1,0 +1,9 @@
+c:\users\gr-instructor\documents\visual studio 2015\Projects\DSA-attendance-system\DSA-attendance-system\bin\Debug\DSA-attendance-system.exe.config
+c:\users\gr-instructor\documents\visual studio 2015\Projects\DSA-attendance-system\DSA-attendance-system\bin\Debug\DSA-attendance-system.exe
+c:\users\gr-instructor\documents\visual studio 2015\Projects\DSA-attendance-system\DSA-attendance-system\bin\Debug\DSA-attendance-system.pdb
+c:\users\gr-instructor\documents\visual studio 2015\Projects\DSA-attendance-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.csprojResolveAssemblyReference.cache
+c:\users\gr-instructor\documents\visual studio 2015\Projects\DSA-attendance-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.Form1.resources
+c:\users\gr-instructor\documents\visual studio 2015\Projects\DSA-attendance-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.Properties.Resources.resources
+c:\users\gr-instructor\documents\visual studio 2015\Projects\DSA-attendance-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.csproj.GenerateResource.Cache
+c:\users\gr-instructor\documents\visual studio 2015\Projects\DSA-attendance-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.exe
+c:\users\gr-instructor\documents\visual studio 2015\Projects\DSA-attendance-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.pdb
