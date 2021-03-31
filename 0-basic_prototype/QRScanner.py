@@ -42,6 +42,7 @@ while True:
 	#print()
 
 	try:
+		print(d[0][0].decode('utf-8'))
 		if d[0][0].decode('utf-8') == "guna123":
 
 			playsound.playsound("QRSound.mp3")
