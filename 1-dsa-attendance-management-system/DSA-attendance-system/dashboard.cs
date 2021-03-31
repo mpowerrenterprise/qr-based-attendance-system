@@ -23,5 +23,12 @@ namespace DSA_attendance_system
             F.Show();
             this.Hide();
         }
+
+        private void employeeManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            student_management sm = new student_management();
+            sm.MdiParent = this;
+            sm.Show();
+        }
     }
 }

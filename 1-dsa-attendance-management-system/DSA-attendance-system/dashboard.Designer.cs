@@ -55,6 +55,7 @@
             this.employeeManagementToolStripMenuItem.Name = "employeeManagementToolStripMenuItem";
             this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(218, 29);
             this.employeeManagementToolStripMenuItem.Text = "Student Management";
+            this.employeeManagementToolStripMenuItem.Click += new System.EventHandler(this.employeeManagementToolStripMenuItem_Click);
             // 
             // attendanceManagementToolStripMenuItem
             // 
@@ -82,6 +83,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(39)))), ((int)(((byte)(135)))));
             this.ClientSize = new System.Drawing.Size(1028, 749);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "dashboard";
             this.Text = "Dashboard";
