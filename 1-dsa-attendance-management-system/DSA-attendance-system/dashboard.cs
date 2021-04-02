@@ -26,9 +26,19 @@ namespace DSA_attendance_system
 
         private void employeeManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            student_management sm = new student_management();
+            remarks_text sm = new remarks_text();
             sm.MdiParent = this;
             sm.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
