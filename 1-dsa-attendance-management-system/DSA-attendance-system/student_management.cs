@@ -135,23 +135,34 @@ namespace DSA_attendance_system
                 student_id_exits = data.GetString(0);
             }
 
-            if (student_id_exits == "")
+            if (student_id_box.Text != "" && batch_no_box.Text != "" && firstname_box.Text != "" && lastname_box.Text != "" && gender != "" && department_box.Text != "" && phone__box.Text != "")
             {
 
-                string sqlcode = "INSERT INTO student_data VALUES('','" + student_id_box.Text + "', '" + firstname_box.Text + "','" + lastname_box.Text + "','" + dateTimePicker1.Text + "','" + gender + "','" + email__box.Text + "','" + phone__box.Text + "','" + department_box.Text + "','" + batch_no_box.Text + "','" + remarks__box.Text + "')";
-                curd.CUD(sqlcode);
-                clearboxes();
-                gender = "";
-                MessageBox.Show("Data inserted successfully");
+                if (student_id_exits == "")
+                {
+
+                    string sqlcode = "INSERT INTO student_data VALUES('','" + student_id_box.Text + "', '" + firstname_box.Text + "','" + lastname_box.Text + "','" + dateTimePicker1.Text + "','" + gender + "','" + email__box.Text + "','" + phone__box.Text + "','" + department_box.Text + "','" + batch_no_box.Text + "','" + remarks__box.Text + "')";
+                    curd.CUD(sqlcode);
+                    DataViwer();
+                    clearboxes();
+                    gender = "";
+                    MessageBox.Show("Data inserted successfully");
+
+                }
+                else
+                {
+
+                    MessageBox.Show("This student ID '" + student_id_exits + "' already exits!.", "Insertion Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    student_id_box.Clear();
+                }
+
+                student_id_exits = "";
 
             }
             else {
 
-                MessageBox.Show("This student ID '"+student_id_exits+"' already exits!.", "Insertion Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                student_id_box.Clear();
+                MessageBox.Show("Please fill up all necessary fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            student_id_exits = "";
            
         }
 
