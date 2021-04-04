@@ -40,5 +40,12 @@ namespace DSA_attendance_system
         {
 
         }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            settings set = new settings();
+            set.MdiParent = this;
+            set.Show();
+        } 
     }
 }

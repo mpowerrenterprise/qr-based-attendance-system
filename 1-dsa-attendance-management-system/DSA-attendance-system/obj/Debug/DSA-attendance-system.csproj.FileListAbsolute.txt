@@ -36,3 +36,4 @@ C:\Users\GR-Instructor\Desktop\dsa-attendance-system\1-dsa-attendance-management
 C:\Users\GR-Instructor\Desktop\dsa-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.dashboard.resources
 C:\Users\GR-Instructor\Desktop\dsa-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.remarks_text.resources
 C:\Users\GR-Instructor\Desktop\dsa-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\QRCoder.dll
+C:\Users\GR-Instructor\Desktop\dsa-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.settings.resources
