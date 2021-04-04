@@ -58,6 +58,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data_view)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -291,10 +292,10 @@
             // 
             // insert_btn
             // 
-            this.insert_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.insert_btn.BackColor = System.Drawing.Color.DarkBlue;
             this.insert_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insert_btn.ForeColor = System.Drawing.Color.White;
-            this.insert_btn.Location = new System.Drawing.Point(168, 33);
+            this.insert_btn.Location = new System.Drawing.Point(14, 25);
             this.insert_btn.Name = "insert_btn";
             this.insert_btn.Size = new System.Drawing.Size(136, 41);
             this.insert_btn.TabIndex = 12;
@@ -304,23 +305,25 @@
             // 
             // update_btn
             // 
-            this.update_btn.BackColor = System.Drawing.Color.DarkBlue;
+            this.update_btn.BackColor = System.Drawing.Color.RoyalBlue;
             this.update_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update_btn.ForeColor = System.Drawing.Color.White;
-            this.update_btn.Location = new System.Drawing.Point(15, 33);
+            this.update_btn.Location = new System.Drawing.Point(166, 25);
             this.update_btn.Name = "update_btn";
             this.update_btn.Size = new System.Drawing.Size(136, 41);
             this.update_btn.TabIndex = 13;
             this.update_btn.Text = "Update";
             this.update_btn.UseVisualStyleBackColor = false;
+            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.update_btn);
             this.groupBox1.Controls.Add(this.insert_btn);
             this.groupBox1.Location = new System.Drawing.Point(1049, 351);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(314, 100);
+            this.groupBox1.Size = new System.Drawing.Size(314, 132);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             // 
@@ -342,7 +345,7 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(436, 83);
+            this.button1.Location = new System.Drawing.Point(434, 83);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 41);
             this.button1.TabIndex = 16;
@@ -353,7 +356,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(277, 46);
+            this.textBox1.Location = new System.Drawing.Point(275, 46);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(295, 31);
@@ -369,7 +372,7 @@
             "Student ID",
             "Firstname",
             "Email"});
-            this.comboBox1.Location = new System.Drawing.Point(105, 46);
+            this.comboBox1.Location = new System.Drawing.Point(103, 46);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(159, 28);
             this.comboBox1.TabIndex = 14;
@@ -378,11 +381,24 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(8, 49);
+            this.label9.Location = new System.Drawing.Point(6, 49);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 20);
             this.label9.TabIndex = 32;
             this.label9.Text = "Search By";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SaddleBrown;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(95, 79);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 41);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Clear";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // remarks_text
             // 
@@ -458,5 +474,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

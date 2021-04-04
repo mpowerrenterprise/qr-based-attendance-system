@@ -213,7 +213,40 @@ namespace DSA_attendance_system
             
             int rowindex = data_view.CurrentCell.RowIndex;
             selected_cell_item = data_view.Rows[rowindex].Cells[0].Value.ToString();
+
+            string sqlcode = "SELECT * from student_data WHERE student_id = '" + selected_cell_item + "'";
+
+            MySqlDataReader data = curd.SelectQ(sqlcode);
+
+            while (data.Read())
+            {
+
+                student_id_box.Text = data.GetString("student_id");
+                firstname_box.Text = data.GetString("firstname");
+                lastname_box.Text = data.GetString("lastname");
+                dateTimePicker1.Text = data.GetString("dob");
+                string gender = data.GetString("gender");
+
+                if (gender == "Male")
+                {
+
+                    male_button.Checked = true;
+
+                }
+                else if (gender == "Female") {
+
+                    female_button.Checked = true;
+                }
+
+                email__box.Text = data.GetString("email");
+                phone__box.Text = data.GetString("phone_no");
+                department_box.Text = data.GetString("department");
+                batch_no_box.Text = data.GetString("batch_no");
+                remarks__box.Text = data.GetString("remarks");
+
+            }
             
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -228,6 +261,47 @@ namespace DSA_attendance_system
                 MessageBox.Show("Deletion Successfull ("+selected_cell_item+")");
                 selected_cell_item = "";
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            clearboxes();
+        }
+
+        private void update_btn_Click(object sender, EventArgs e)
+        {
+
+            string gender = "";
+
+            if (male_button.Checked == true)
+            {
+
+                gender = "Male";
+
+            }
+            else
+            {
+
+                gender = "Female";
+            }
+
+
+            if (student_id_box.Text != "" && batch_no_box.Text != "" && firstname_box.Text != "" && lastname_box.Text != "" && gender != "" && department_box.Text != "" && phone__box.Text != "")
+            {
+
+                    string sqlcode = "UPDATE student_data SET firstname = '"+firstname_box.Text+"', lastname ='"+lastname_box.Text+"', dob = '"+dateTimePicker1.Text+"', gender = '"+gender+"', email = '"+email__box.Text+"', phone_no = '"+phone__box.Text+"', department =  '"+department_box.Text+"', batch_no = '"+batch_no_box.Text+"', remarks = '"+remarks__box.Text+"' WHERE student_id = '"+student_id_box.Text+"'";            
+                    curd.CUD(sqlcode);
+                    DataViwer();
+                    clearboxes();
+                    gender = "";
+                    MessageBox.Show("Data updated successfully");   
+            }
+            else
+            {
+
+                MessageBox.Show("Please fill up all necessary fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }
