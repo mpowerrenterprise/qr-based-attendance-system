@@ -53,24 +53,32 @@
             this.insert_btn = new System.Windows.Forms.Button();
             this.update_btn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.qrpic = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.data_view)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qrpic)).BeginInit();
             this.SuspendLayout();
             // 
             // data_view
             // 
             this.data_view.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_view.Location = new System.Drawing.Point(12, 537);
+            this.data_view.Location = new System.Drawing.Point(12, 536);
             this.data_view.Name = "data_view";
             this.data_view.ReadOnly = true;
-            this.data_view.Size = new System.Drawing.Size(1580, 344);
+            this.data_view.Size = new System.Drawing.Size(1580, 345);
             this.data_view.TabIndex = 0;
             this.data_view.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_view_CellClick);
             // 
@@ -78,7 +86,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(254, 34);
+            this.label1.Location = new System.Drawing.Point(149, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 20);
             this.label1.TabIndex = 1;
@@ -88,7 +96,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(255, 147);
+            this.label2.Location = new System.Drawing.Point(150, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 3;
@@ -98,7 +106,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(255, 208);
+            this.label3.Location = new System.Drawing.Point(150, 207);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 20);
             this.label3.TabIndex = 5;
@@ -108,7 +116,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(253, 262);
+            this.label5.Location = new System.Drawing.Point(148, 261);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 20);
             this.label5.TabIndex = 9;
@@ -118,7 +126,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(255, 319);
+            this.label4.Location = new System.Drawing.Point(150, 318);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 11;
@@ -128,7 +136,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(928, 267);
+            this.label6.Location = new System.Drawing.Point(676, 273);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 20);
             this.label6.TabIndex = 21;
@@ -137,7 +145,7 @@
             // batch_no_box
             // 
             this.batch_no_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.batch_no_box.Location = new System.Drawing.Point(387, 88);
+            this.batch_no_box.Location = new System.Drawing.Point(282, 87);
             this.batch_no_box.Multiline = true;
             this.batch_no_box.Name = "batch_no_box";
             this.batch_no_box.Size = new System.Drawing.Size(295, 31);
@@ -147,7 +155,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(255, 92);
+            this.label7.Location = new System.Drawing.Point(150, 91);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 20);
             this.label7.TabIndex = 19;
@@ -157,7 +165,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(928, 151);
+            this.label8.Location = new System.Drawing.Point(676, 157);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 20);
             this.label8.TabIndex = 17;
@@ -166,7 +174,7 @@
             // phone__box
             // 
             this.phone__box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone__box.Location = new System.Drawing.Point(1046, 81);
+            this.phone__box.Location = new System.Drawing.Point(794, 87);
             this.phone__box.Multiline = true;
             this.phone__box.Name = "phone__box";
             this.phone__box.Size = new System.Drawing.Size(314, 31);
@@ -176,7 +184,7 @@
             // 
             this.phone_box.AutoSize = true;
             this.phone_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone_box.Location = new System.Drawing.Point(928, 87);
+            this.phone_box.Location = new System.Drawing.Point(676, 93);
             this.phone_box.Name = "phone_box";
             this.phone_box.Size = new System.Drawing.Size(87, 20);
             this.phone_box.TabIndex = 15;
@@ -185,7 +193,7 @@
             // email__box
             // 
             this.email__box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email__box.Location = new System.Drawing.Point(1046, 23);
+            this.email__box.Location = new System.Drawing.Point(794, 29);
             this.email__box.Multiline = true;
             this.email__box.Name = "email__box";
             this.email__box.Size = new System.Drawing.Size(314, 31);
@@ -195,7 +203,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(928, 28);
+            this.label10.Location = new System.Drawing.Point(676, 34);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 20);
             this.label10.TabIndex = 13;
@@ -206,7 +214,7 @@
             this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(387, 257);
+            this.dateTimePicker1.Location = new System.Drawing.Point(282, 256);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(295, 26);
             this.dateTimePicker1.TabIndex = 5;
@@ -215,7 +223,7 @@
             // student_id_box
             // 
             this.student_id_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.student_id_box.Location = new System.Drawing.Point(387, 29);
+            this.student_id_box.Location = new System.Drawing.Point(282, 28);
             this.student_id_box.Multiline = true;
             this.student_id_box.Name = "student_id_box";
             this.student_id_box.Size = new System.Drawing.Size(295, 31);
@@ -224,7 +232,7 @@
             // lastname_box
             // 
             this.lastname_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastname_box.Location = new System.Drawing.Point(387, 201);
+            this.lastname_box.Location = new System.Drawing.Point(282, 200);
             this.lastname_box.Multiline = true;
             this.lastname_box.Name = "lastname_box";
             this.lastname_box.Size = new System.Drawing.Size(295, 31);
@@ -233,7 +241,7 @@
             // firstname_box
             // 
             this.firstname_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstname_box.Location = new System.Drawing.Point(387, 141);
+            this.firstname_box.Location = new System.Drawing.Point(282, 140);
             this.firstname_box.Multiline = true;
             this.firstname_box.Name = "firstname_box";
             this.firstname_box.Size = new System.Drawing.Size(295, 31);
@@ -243,7 +251,7 @@
             // 
             this.male_button.AutoSize = true;
             this.male_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.male_button.Location = new System.Drawing.Point(428, 317);
+            this.male_button.Location = new System.Drawing.Point(323, 316);
             this.male_button.Name = "male_button";
             this.male_button.Size = new System.Drawing.Size(61, 24);
             this.male_button.TabIndex = 6;
@@ -255,7 +263,7 @@
             // 
             this.female_button.AutoSize = true;
             this.female_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.female_button.Location = new System.Drawing.Point(561, 315);
+            this.female_button.Location = new System.Drawing.Point(456, 314);
             this.female_button.Name = "female_button";
             this.female_button.Size = new System.Drawing.Size(80, 24);
             this.female_button.TabIndex = 7;
@@ -276,7 +284,7 @@
             "Space Lab",
             "Bio Lab",
             "Business Lab"});
-            this.department_box.Location = new System.Drawing.Point(1046, 147);
+            this.department_box.Location = new System.Drawing.Point(794, 153);
             this.department_box.Name = "department_box";
             this.department_box.Size = new System.Drawing.Size(314, 28);
             this.department_box.TabIndex = 10;
@@ -284,7 +292,7 @@
             // remarks__box
             // 
             this.remarks__box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remarks__box.Location = new System.Drawing.Point(1046, 208);
+            this.remarks__box.Location = new System.Drawing.Point(794, 214);
             this.remarks__box.Name = "remarks__box";
             this.remarks__box.Size = new System.Drawing.Size(314, 143);
             this.remarks__box.TabIndex = 11;
@@ -321,11 +329,24 @@
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.update_btn);
             this.groupBox1.Controls.Add(this.insert_btn);
-            this.groupBox1.Location = new System.Drawing.Point(1049, 351);
+            this.groupBox1.Location = new System.Drawing.Point(797, 357);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(314, 132);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SaddleBrown;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(95, 79);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 41);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Clear";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox2
             // 
@@ -333,7 +354,7 @@
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Location = new System.Drawing.Point(121, 391);
+            this.groupBox2.Location = new System.Drawing.Point(6, 377);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(578, 140);
             this.groupBox2.TabIndex = 31;
@@ -387,25 +408,67 @@
             this.label9.TabIndex = 32;
             this.label9.Text = "Search By";
             // 
-            // button2
+            // groupBox3
             // 
-            this.button2.BackColor = System.Drawing.Color.SaddleBrown;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(95, 79);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 41);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.groupBox3.Controls.Add(this.groupBox2);
+            this.groupBox3.Location = new System.Drawing.Point(12, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1127, 524);
+            this.groupBox3.TabIndex = 32;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.button3);
+            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.qrpic);
+            this.groupBox5.Location = new System.Drawing.Point(1145, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(447, 524);
+            this.groupBox5.TabIndex = 34;
+            this.groupBox5.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.CadetBlue;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(18, 464);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(408, 44);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Save";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
+            this.textBox2.Location = new System.Drawing.Point(18, 421);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(408, 38);
+            this.textBox2.TabIndex = 35;
+            // 
+            // qrpic
+            // 
+            this.qrpic.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.qrpic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qrpic.Location = new System.Drawing.Point(18, 19);
+            this.qrpic.Name = "qrpic";
+            this.qrpic.Size = new System.Drawing.Size(408, 394);
+            this.qrpic.TabIndex = 0;
+            this.qrpic.TabStop = false;
             // 
             // remarks_text
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1604, 881);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.remarks__box);
             this.Controls.Add(this.department_box);
@@ -429,6 +492,7 @@
             this.Controls.Add(this.student_id_box);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.data_view);
+            this.Controls.Add(this.groupBox3);
             this.Name = "remarks_text";
             this.Text = "Student Management";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -437,6 +501,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qrpic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -475,5 +543,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.PictureBox qrpic;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Drawing.Imaging;
 
 namespace DSA_attendance_system
 {
@@ -25,8 +26,10 @@ namespace DSA_attendance_system
         private void student_management_Load(object sender, EventArgs e)
         {
             data_view.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            textBox2.TextAlign = HorizontalAlignment.Center;
+            qrpic.SizeMode = PictureBoxSizeMode.StretchImage;
             DataViwer();
-
+           
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -110,6 +113,31 @@ namespace DSA_attendance_system
             data_view.DataSource = tab;
             
         }
+
+        public void QRCODEGenerator(string value, bool saveMode) {
+
+            QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+            var MyData = QG.CreateQrCode(value, QRCoder.QRCodeGenerator.ECCLevel.M);
+            var code = new QRCoder.QRCode(MyData);
+            Bitmap qrCodeImage = code.GetGraphic(50);
+            qrpic.Image = qrCodeImage;
+
+            if (saveMode == true) {
+
+                SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Filter = "PNG |*.png; | JPG |*.jpg; | JPEG | .jpeg;";
+                dialog.FileName = value;
+                
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    qrCodeImage.Save(dialog.FileName, ImageFormat.Png);
+                }
+
+            }
+
+        }
+
+
 
         private void insert_btn_Click(object sender, EventArgs e)
         {
@@ -245,7 +273,9 @@ namespace DSA_attendance_system
                 remarks__box.Text = data.GetString("remarks");
 
             }
-            
+
+            QRCODEGenerator(selected_cell_item, false);
+            textBox2.Text = firstname_box.Text + " " + lastname_box.Text;
 
         }
 
@@ -300,6 +330,21 @@ namespace DSA_attendance_system
             {
 
                 MessageBox.Show("Please fill up all necessary fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (selected_cell_item != "") {
+
+                QRCODEGenerator(selected_cell_item, true);
+
             }
 
         }
