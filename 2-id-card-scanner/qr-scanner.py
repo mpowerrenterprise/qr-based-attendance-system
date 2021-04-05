@@ -59,14 +59,12 @@ while True:
 			hiddenData = QRcodeData[0][0].decode('utf-8')
 
 			if counter == 3:
-				
+
 				playsound.playsound("system-data\\QR-sound.mp3")
 				counter = 0
 
 			counter = counter + 1
 			
-
-
 			pts = np.array([QRcodeData[0][3]],np.int32)
 			pts = pts.reshape((-1,1,2))
 			cv2.polylines(frame,[pts],True,(0,255,0),5)
