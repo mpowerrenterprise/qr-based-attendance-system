@@ -136,11 +136,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <Content Include="Images\dreamspace.png" />
+    <Content Include="Images\icon1.jpg" />
+    <Content Include="Images\icon2.png" />
+    <Content Include="Images\password2.png" />
     <None Include="Resources\bded4d52f9-out.gif" />
     <None Include="Resources\7d7ffa26cb-out.gif" />
     <None Include="Resources\logo-4148x2074-dreamspace-21.png" />
     <None Include="Resources\logo-4148x2074-dreamspace-2.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

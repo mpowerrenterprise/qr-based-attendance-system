@@ -83,6 +83,36 @@ namespace DSA_attendance_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dreamspace {
+            get {
+                object obj = ResourceManager.GetObject("dreamspace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon1 {
+            get {
+                object obj = ResourceManager.GetObject("icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon2 {
+            get {
+                object obj = ResourceManager.GetObject("icon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_4148x2074_dreamspace_2 {
             get {
                 object obj = ResourceManager.GetObject("logo-4148x2074-dreamspace-2", resourceCulture);
@@ -96,6 +126,16 @@ namespace DSA_attendance_system.Properties {
         internal static System.Drawing.Bitmap logo_4148x2074_dreamspace_21 {
             get {
                 object obj = ResourceManager.GetObject("logo-4148x2074-dreamspace-21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap password2 {
+            get {
+                object obj = ResourceManager.GetObject("password2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
