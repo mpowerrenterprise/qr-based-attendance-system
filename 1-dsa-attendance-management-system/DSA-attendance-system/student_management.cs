@@ -52,7 +52,7 @@ namespace DSA_attendance_system
             female_button.Checked = false;
             email__box.Clear();
             phone__box.Clear();
-            department_box.Text = "";
+            department_box.SelectedIndex = 0;
             remarks__box.Clear();
         }
 
@@ -169,7 +169,7 @@ namespace DSA_attendance_system
                 if (student_id_exits == "")
                 {
 
-                    string sqlcode = "INSERT INTO student_data VALUES('','" + student_id_box.Text + "', '" + firstname_box.Text + "','" + lastname_box.Text + "','" + dateTimePicker1.Text + "','" + gender + "','" + email__box.Text + "','" + phone__box.Text + "','" + department_box.Text + "','" + batch_no_box.Text + "','" + remarks__box.Text + "')";
+                    string sqlcode = "INSERT INTO student_data VALUES('','" + student_id_box.Text + "', '" + firstname_box.Text + "','" + lastname_box.Text + "','" + born_date.Text + "','" + gender + "','" + email__box.Text + "','" + phone__box.Text + "','" + department_box.Text + "','" + batch_no_box.Text + "','" + remarks__box.Text + "')";
                     curd.CUD(sqlcode);
                     DataViwer();
                     clearboxes();
@@ -252,7 +252,7 @@ namespace DSA_attendance_system
                 student_id_box.Text = data.GetString("student_id");
                 firstname_box.Text = data.GetString("firstname");
                 lastname_box.Text = data.GetString("lastname");
-                dateTimePicker1.Text = data.GetString("dob");
+                born_date.Text = data.GetString("dob");
                 string gender = data.GetString("gender");
 
                 if (gender == "Male")
@@ -290,6 +290,7 @@ namespace DSA_attendance_system
                 DataViwer();
                 MessageBox.Show("Deletion Successfull ("+selected_cell_item+")");
                 selected_cell_item = "";
+                clearboxes();
             }
         }
 
@@ -319,7 +320,7 @@ namespace DSA_attendance_system
             if (student_id_box.Text != "" && batch_no_box.Text != "" && firstname_box.Text != "" && lastname_box.Text != "" && gender != "" && department_box.Text != "" && phone__box.Text != "")
             {
 
-                    string sqlcode = "UPDATE student_data SET firstname = '"+firstname_box.Text+"', lastname ='"+lastname_box.Text+"', dob = '"+dateTimePicker1.Text+"', gender = '"+gender+"', email = '"+email__box.Text+"', phone_no = '"+phone__box.Text+"', department =  '"+department_box.Text+"', batch_no = '"+batch_no_box.Text+"', remarks = '"+remarks__box.Text+"' WHERE student_id = '"+student_id_box.Text+"'";            
+                    string sqlcode = "UPDATE student_data SET firstname = '"+firstname_box.Text+"', lastname ='"+lastname_box.Text+"', dob = '"+ born_date.Text+"', gender = '"+gender+"', email = '"+email__box.Text+"', phone_no = '"+phone__box.Text+"', department =  '"+department_box.Text+"', batch_no = '"+batch_no_box.Text+"', remarks = '"+remarks__box.Text+"' WHERE student_id = '"+student_id_box.Text+"'";            
                     curd.CUD(sqlcode);
                     DataViwer();
                     clearboxes();

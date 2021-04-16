@@ -42,7 +42,6 @@
             this.phone_box = new System.Windows.Forms.Label();
             this.email__box = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.student_id_box = new System.Windows.Forms.TextBox();
             this.lastname_box = new System.Windows.Forms.TextBox();
             this.firstname_box = new System.Windows.Forms.TextBox();
@@ -64,6 +63,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.qrpic = new System.Windows.Forms.PictureBox();
+            this.born_date = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.data_view)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -208,17 +208,6 @@
             this.label10.Size = new System.Drawing.Size(53, 20);
             this.label10.TabIndex = 13;
             this.label10.Text = "Email";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(282, 256);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(295, 26);
-            this.dateTimePicker1.TabIndex = 5;
-            this.dateTimePicker1.Value = new System.DateTime(2010, 1, 1, 0, 0, 0, 0);
             // 
             // student_id_box
             // 
@@ -410,6 +399,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.born_date);
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Location = new System.Drawing.Point(12, 6);
             this.groupBox3.Name = "groupBox3";
@@ -463,18 +453,26 @@
             this.qrpic.TabIndex = 0;
             this.qrpic.TabStop = false;
             // 
+            // born_date
+            // 
+            this.born_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.born_date.Location = new System.Drawing.Point(269, 248);
+            this.born_date.Multiline = true;
+            this.born_date.Name = "born_date";
+            this.born_date.Size = new System.Drawing.Size(295, 31);
+            this.born_date.TabIndex = 35;
+            // 
             // remarks_text
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.ClientSize = new System.Drawing.Size(1284, 749);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.remarks__box);
             this.Controls.Add(this.department_box);
             this.Controls.Add(this.female_button);
             this.Controls.Add(this.male_button);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.batch_no_box);
             this.Controls.Add(this.label7);
@@ -502,6 +500,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.qrpic)).EndInit();
@@ -526,7 +525,6 @@
         private System.Windows.Forms.Label phone_box;
         private System.Windows.Forms.TextBox email__box;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox student_id_box;
         private System.Windows.Forms.TextBox lastname_box;
         private System.Windows.Forms.TextBox firstname_box;
@@ -548,5 +546,6 @@
         private System.Windows.Forms.PictureBox qrpic;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox born_date;
     }
 }
