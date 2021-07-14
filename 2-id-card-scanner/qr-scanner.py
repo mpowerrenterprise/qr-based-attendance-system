@@ -4,10 +4,12 @@ import ctypes
 import pyttsx3
 import datetime
 import playsound
+import xlsxwriter
 import numpy as np
 from PIL import Image
-from pyzbar.pyzbar import decode
 import mysql.connector
+from pyzbar.pyzbar import decode
+
 
 
 Attendance_Already_Exit = ["your attendance has been already marked","your attendance has been already exited in the database", "your attendance is already in the database"]
@@ -16,6 +18,7 @@ Entering_Attendance_Passed = ["your attendance has been marked, You are welcome 
 unauthorized_IDcard_Voice_Data = ["unauthorized identity card found. access denied. access denied.", "access denied. access denied. unauthorized identity card found.", "your identity card is invalid. access denied", "invalid identity card access denied", "i can't accept your identity card. because it is invalid","Your identity card is incorrect, access denied"]
 
 
+#Establish mysql connection
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
@@ -23,26 +26,32 @@ mydb = mysql.connector.connect(
   database="dsa_attendance_system"
 )
 
-
+#Create mysql select object
 SelectDataCursor = mydb.cursor()
 
+#Output sound 
 engine = pyttsx3.init()
-voices = engine.getProperty('voices')       #getting details of current voice
-#engine.setProperty('voice', voices[0].id)  #changing index, changes voices. o for male
-engine.setProperty('voice', voices[1].id)   #changing index, changes voices. 1 for female
+voices = engine.getProperty('voices')       #Get details of current voices
+#engine.setProperty('voice', voices[0].id)  #Change index, changes voices. o for male
+engine.setProperty('voice', voices[1].id)   #Change index, changes voices. 1 for female
 
 
+#Get the screen resolution
 user32 = ctypes.windll.user32
 screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
 
+#defined the window's width and height
 Screen_Width = 820
 Screen_Height = 620
 
+#Get the center width and hight
 Screen_Center_Width = int((screensize[0] - Screen_Width) / 2)
 Screen_Center_Height = int((screensize[1] - Screen_Height) / 2) - 30
 
+
+# Return the corresponding greeting value based on the time (hour) input
 def greeting_function():
-    currentHour = int(datetime.datetime.now().hour)
+    currentHour = int(datetime.datetime.now().hour) #Get current hour
     basicGreeting = ""
 
     if currentHour >= 0 and currentHour < 12:
@@ -61,40 +70,67 @@ def talk_function(words):
 	engine.say(words)
 	engine.runAndWait()
 
-
+#Save the attendance details as excel sheet 
 def excel_convert_and_copy_to_google_drive():
-	SelectDataCursor.execute("SELECT DISTINCT department, batch_no FROM student_data")
+
+	current_date_object = datetime.datetime.today()
+	current_date = current_date_object.strftime('%m-%d-%Y')
+
+	SelectDataCursor.execute("SELECT DISTINCT student_data.department,student_data.batch_no FROM student_data, attendance_data WHERE attendance_data.student_id = student_data.student_id AND attendance_data._date = '{}'".format(current_date))
 	dep_batch_data = SelectDataCursor.fetchall()
 	mydb.commit()
 
-	present_students = []
-	absent_students = []
-
 	for x in dep_batch_data:
+
+		sheet_name = x[0].lower()
+		sheet_name = sheet_name.replace(" ","-")
+
+		workbook = xlsxwriter.Workbook(f'{sheet_name}-batch-no-{x[1]}.xlsx')
+		worksheet = workbook.add_worksheet()
+
+		format1 = workbook.add_format({'align': 'center', 'bold': True,'font_size': 13, 'bg_color': '#e4e7ed'})
+
+		worksheet.write('A1', 'Student ID', format1)
+		worksheet.write('B1', 'First Name', format1)
+		worksheet.write('C1', 'Last Name', format1)
+		worksheet.write('D1', 'Email', format1)
+		worksheet.write('E1', 'Phone Number', format1)
+		worksheet.write('F1', 'Attendance Status', format1)
+
+
+		worksheet.set_column(0, 5, 25)
+
+
 		
-		sql_code = "SELECT attendance_data.student_id FROM attendance_data, student_data WHERE attendance_data.student_id = student_data.student_id and student_data.department = '{}' and student_data.batch_no = '{}'".format(x[0],x[1]);
-		SelectDataCursor.execute(sql_code)
+		present_students = []
+		absent_students = []
+		all_students = []
+		
+		sql_code0 = "SELECT attendance_data.student_id FROM attendance_data, student_data WHERE attendance_data.student_id = student_data.student_id and student_data.department = '{}' and student_data.batch_no = '{}' and attendance_data._date = '{}'".format(x[0],x[1],current_date);
+		SelectDataCursor.execute(sql_code0)
 		attendance_present_data = SelectDataCursor.fetchall()
 		mydb.commit()
 
+		if attendance_present_data != 0:
+			for mx in attendance_present_data:
+				present_students.append(mx[0])
 
-		sql_code_2 = '''SELECT student_data.student_id FROM student_data WHERE student_data.department = "{}" AND student_data.batch_no = "{}" AND NOT EXISTS ( SELECT attendance_data.student_id FROM attendance_data WHERE student_data.student_id=attendance_data.student_id)'''.format(x[0], x[1])
-		SelectDataCursor.execute(sql_code_2)
-		attendance_absent_data = SelectDataCursor.fetchall()
+
+		sql_code_1 = "SELECT student_id FROM student_data"
+		SelectDataCursor.execute(sql_code_1)
+		all_student_ids = SelectDataCursor.fetchall()
 		mydb.commit()
 
+		if all_student_ids != 0:
+			for mx in all_student_ids:
+				all_students.append(mx[0])
 
-		present_students.append(attendance_present_data[0][0])
-		
-		if len(attendance_absent_data) != 0:
-			absent_students.append(attendance_absent_data[0][0])
+		absent_students = list(set(all_students) - set(present_students))
 
-	print(present_students)
-	print(absent_students)
-		
-
-
-	
+		print(all_students)
+		print(present_students)
+		print(absent_students)
+		workbook.close()
 
 excel_convert_and_copy_to_google_drive()
 	
