@@ -19,9 +19,19 @@ namespace DSA_attendance_system
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 F = new Form1();
-            F.Show();
-            this.Hide();
+            DialogResult dialog = MessageBox.Show("Do You Really Want to Close the System? ", "Exit", MessageBoxButtons.YesNo);
+
+            if(dialog == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else if (dialog == DialogResult.No)
+            {
+                dashboard d = new dashboard();
+                d.Show();
+                this.Hide();
+            }
+            
         }
 
         private void employeeManagementToolStripMenuItem_Click(object sender, EventArgs e)
