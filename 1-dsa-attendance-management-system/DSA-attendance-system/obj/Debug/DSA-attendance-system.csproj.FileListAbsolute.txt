@@ -148,3 +148,31 @@ C:\Users\Software Lab DSA\Desktop\dreamspace-qr-attendance-system\1-dsa-attendan
 C:\Users\Software Lab DSA\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.exe
 C:\Users\Software Lab DSA\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.pdb
 C:\Users\Software Lab DSA\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\DSA-attendance-system.pdb
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\DSA-attendance-system.exe.config
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\DSA-attendance-system.exe
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\DSA-attendance-system.pdb
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\QRCoder.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\Zstandard.Net.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\Renci.SshNet.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\System.Buffers.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\System.Memory.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.csproj.AssemblyReference.cache
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.exe.config
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.dashboard.resources
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.Form1.resources
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.loading_screen.resources
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.Properties.Resources.resources
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.settings.resources
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.remarks_text.resources
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.csproj.GenerateResource.cache
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.csproj.CoreCompileInputs.cache
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.csproj.CopyComplete
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.exe
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.pdb
