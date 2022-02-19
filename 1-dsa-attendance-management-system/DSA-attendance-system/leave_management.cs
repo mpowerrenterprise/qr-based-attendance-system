@@ -61,6 +61,15 @@ namespace DSA_attendance_system
 
             }
 
+            MySqlDataReader data2 = curd.SelectQ(sqlcode2);
+
+            while (data2.Read())
+            {
+
+                tab.Rows.Add(data2.GetString("student_id"), data2.GetString("firstname"), data2.GetString("lastname"), data2.GetString("department"), data2.GetString("batch_no"), data2.GetString("gender"), data2.GetString("phone_no"), "ABSENT");
+
+            }
+
             data_view.DataSource = tab;
 
         }
@@ -72,8 +81,8 @@ namespace DSA_attendance_system
         private void update_btn_Click(object sender, EventArgs e)
         {
             string sqlcode1 = "SELECT student_data.*  FROM attendance_data, student_data WHERE student_data.student_id = attendance_data.student_id AND student_data.batch_no = '" + comboBox2.Text + "' and attendance_data._date = '" + dateTimePicker1.Text + "' AND student_data.department = '"+comboBox1.Text+"'";
-            
-            getDataForLeaveManagement(sqlcode1, "");
+            string sqlcode2 = "SELECT * FROM student_data AS student_data_table WHERE NOT EXISTS (SELECT * FROM attendance_data AS attendance_data_table WHERE student_data_table.student_id=attendance_data_table.student_id AND attendance_data_table._date = '" + dateTimePicker1.Text + "') AND student_data_table.department = '" + comboBox1.Text + "' AND student_data_table.batch_no = '" + comboBox2.Text + "'";
+            getDataForLeaveManagement(sqlcode1,sqlcode2);
 
 
         }
