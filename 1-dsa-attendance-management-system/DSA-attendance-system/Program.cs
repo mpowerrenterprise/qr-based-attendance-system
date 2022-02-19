@@ -16,7 +16,7 @@ namespace DSA_attendance_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dashboard());
+            Application.Run(new Form1());
         }
     }
 }

@@ -76,6 +76,12 @@ namespace DSA_attendance_system
         private void leave_management_Load(object sender, EventArgs e)
         {
             data_view.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            string currentDate = DateTime.Now.ToString("MM-dd-yyyy");
+
+            string sqlcode1 = "SELECT student_data.*  FROM attendance_data, student_data WHERE student_data.student_id = attendance_data.student_id AND attendance_data._date = '"+ currentDate + "'";
+            string sqlcode2 = "SELECT * FROM student_data AS student_data_table WHERE NOT EXISTS (SELECT * FROM attendance_data AS attendance_data_table WHERE student_data_table.student_id=attendance_data_table.student_id AND attendance_data_table._date = '"+ currentDate + "')";
+            getDataForLeaveManagement(sqlcode1, sqlcode2);
         }
 
         private void update_btn_Click(object sender, EventArgs e)
