@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 07, 2021 at 08:04 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Generation Time: Feb 19, 2022 at 01:08 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -78,7 +78,7 @@ CREATE TABLE `user_account` (
 --
 
 INSERT INTO `user_account` (`auto_id`, `username`, `password`) VALUES
-(7, 'dreamspace-admin', 'dreamspace@123');
+(7, 'admin', 'admin');
 
 --
 -- Indexes for dumped tables
