@@ -39,6 +39,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.employeeManagementToolStripMenuItem,
             this.attendanceManagementToolStripMenuItem,
@@ -46,7 +47,7 @@
             this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1028, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1371, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -54,39 +55,41 @@
             // employeeManagementToolStripMenuItem
             // 
             this.employeeManagementToolStripMenuItem.Name = "employeeManagementToolStripMenuItem";
-            this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(218, 29);
+            this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(274, 36);
             this.employeeManagementToolStripMenuItem.Text = "Student Management";
             this.employeeManagementToolStripMenuItem.Click += new System.EventHandler(this.employeeManagementToolStripMenuItem_Click);
             // 
             // attendanceManagementToolStripMenuItem
             // 
             this.attendanceManagementToolStripMenuItem.Name = "attendanceManagementToolStripMenuItem";
-            this.attendanceManagementToolStripMenuItem.Size = new System.Drawing.Size(249, 29);
+            this.attendanceManagementToolStripMenuItem.Size = new System.Drawing.Size(317, 36);
             this.attendanceManagementToolStripMenuItem.Text = "Attendance Management";
+            this.attendanceManagementToolStripMenuItem.Click += new System.EventHandler(this.attendanceManagementToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(96, 29);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(120, 36);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(89, 29);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(109, 36);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(39)))), ((int)(((byte)(135)))));
-            this.ClientSize = new System.Drawing.Size(1028, 749);
+            this.ClientSize = new System.Drawing.Size(1371, 922);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "dashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

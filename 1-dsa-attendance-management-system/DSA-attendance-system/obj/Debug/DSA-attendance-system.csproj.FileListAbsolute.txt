@@ -176,3 +176,4 @@ C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-ma
 C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.csproj.CopyComplete
 C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.exe
 C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA-attendance-system.pdb
+C:\Users\Gunarakulan\Desktop\dreamspace-qr-attendance-system\1-dsa-attendance-management-system\DSA-attendance-system\obj\Debug\DSA_attendance_system.leave_management.resources

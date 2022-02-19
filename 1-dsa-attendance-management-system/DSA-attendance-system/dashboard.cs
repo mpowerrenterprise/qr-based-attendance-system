@@ -48,6 +48,13 @@ namespace DSA_attendance_system
             settings set = new settings();
             set.MdiParent = this;
             set.Show();
-        } 
+        }
+
+        private void attendanceManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            leave_management leave = new leave_management();
+            leave.MdiParent = this;
+            leave.Show();
+        }
     }
 }
