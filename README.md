@@ -32,6 +32,7 @@ This system has two parts in it. The first one is the QR code scanner script tha
 
 #### Identity Card Scanner in Python
   - Python - Main programming language
+  - OpenCV - for computer vision.
   - Pyzbar - a module for QR code functions
   - PYTTSX3 - a module for voice outputs
   - Playsound - a module for playing external sounds
