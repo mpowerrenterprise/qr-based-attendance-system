@@ -4,9 +4,7 @@ import ctypes
 import pyttsx3
 import datetime
 import playsound
-import xlsxwriter
 import numpy as np
-from PIL import Image
 import mysql.connector
 from pyzbar.pyzbar import decode
 
