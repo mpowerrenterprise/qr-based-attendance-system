@@ -93,7 +93,6 @@ This system has two parts in it. The first one is the QR code scanner script tha
     pip install mysql-connector-python
   ```
 
-
 **IMPORTANT NOTE:** When you install a dependency by using "pip install", it will install the latest version of the dependency. Sometimes, we need the exact version that is used in the project to future errors. **To find the dependencies' version, please check out 'required-dependencies.txt'** that is found on the project folder.
 
 
