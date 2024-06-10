@@ -1,4 +1,4 @@
-# QR-BASED ATTENDANCE SYSTEM
+# QR-Based Attendance System
 
 ## Introduction
 
@@ -219,7 +219,7 @@ This is the module where the admin can change the password of the system.
 
 ![](github-readme-content/settings.jpg)
 
-# CONTACT
+# Contact
 
 ### Website: 
 
